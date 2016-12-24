@@ -1,0 +1,27 @@
+---
+layout : default
+---
+<style>
+    .titlebox{position:relative;}
+    .left,.right{width:50%; display:inline-block;}
+    .left{padding-left: 1.25em;}
+    .right{padding-right:1.25em; color:#6f6a6c;}
+</style>
+<div class="titlebox">
+  <div class="left"><h3>{{ page.title }} {{# page.tagline }} <small>{{ . }}</small>{{/ page.tagline }}</h3></div><div align=right class="right">{{ page.date }}</div>
+</div>
+
+{{{ content }}}
+
+<h4>Categories</h4>
+<ul>
+{{# page.categories?to_categories }}
+  {{> categories_list }}
+{{/ page.categories?to_categories }}
+</ul>
+<h4>Tags</h4>
+<ul>
+{{# page.tags?to_tags }}
+  {{> tags_list }}
+{{/ page.tags?to_tags }}
+</ul>

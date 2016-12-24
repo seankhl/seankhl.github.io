@@ -1,0 +1,31 @@
+body {
+  font-family: 'M+ C Type-1 (basic latin) Regular', sans-serif;
+  font-size: 90%;
+}
+
+h1, h2, h3 {
+  font-family: 'M+ C Type-1 (basic latin) Heavy', sans-serif;
+  font-weight: normal;
+}
+*/
+
+pre, code, var, kbd, samp {
+  font-family: "M+ Mn Type-1 (basic latin) Regular", monospace;
+}
+
+var, kbd, samp {
+  font-weight: normal;
+  font-style: normal;
+  background-color: #eeeced;
+  border-left: 0.2em solid #eeeced;
+  border-right: 0.2em solid #eeeced;
+}
+
+a {
+  color: #6f6a6c;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  border-bottom: 1px dotted #6f6a6c;
+}
